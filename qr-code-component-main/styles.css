@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5e1ef;
+  position: relative;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  width: 320px;
+  height: 497px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 16px;
+  gap: 24px;
+}
+
+.qr-container {
+  position: relative;
+  width: 288px;
+  height: 288px;
+  background-color: #2c7dfa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.qr-desc-container {
+  position: relative;
+  width: 288px;
+  height: 129px;
+  background-color: #ffff;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.qr-container .oval-before {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #3685ff;
+  border-radius: 50%;
+  left: -50%;
+  top: -55%;
+  opacity: 1;
+}
+
+.qr-container .oval-after {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  background: #3685ff;
+  border-radius: 50%;
+  right: -50%;
+  bottom: -60%;
+  opacity: 1;
+}
+
+.qr-container .qr-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 99;
+}
+
+.qr-desc-container .title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #1f314f;
+  -webkit-text-stroke: 0.1px #000000;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.qr-desc-container .subtitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: #979797;
+  text-align: center;
+}
